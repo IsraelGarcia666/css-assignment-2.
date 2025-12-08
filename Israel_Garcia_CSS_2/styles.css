@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.stack-sans-notch {
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+            font-family: 'Stack Sans Notch', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            color: #f8edd8;
+            background-color: #090808; /* fallback color (black) */
+            background: url("puerta verde.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+/* A fluid container to control max width on large screens */
+main,
+.container {
+  width: min(900px, 100% - 2rem);      /* max 900px, with fluid side padding */
+  margin-inline: auto;
+}
+
+body.home {
+    background-color: #121212; /* fallback color (black) */
+    background: url("puerta verde.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.about {
+    background-color: #121212; /* fallback color (black) */
+    background: url("flame-1363095_Logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body.gallery {
+    background-color: #121212; /* fallback color (black) */
+    background: url("israel-palacio-unsplash_Logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.contact {
+    background-color: #121212; /* fallback color (black) */
+    background-image: url("Guille-concert2_Logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0; /* Ensures no white space */
+}
+
+/* ========== Typography ========== */
+h1, h2, h3, h5, h6, nav a {
+    font-family: 'Stack Sans Notch', sans-serif;
+    margin-bottom: 20px;
+    color: #f4f4f1;
+    text-align: center;
+}
+
+/* Scale heading sizes across devices */
+h1 { font-size: clamp(1.6rem, 4.8vw, 3rem); }
+h3 { font-size: clamp(1rem, 3.2vw, 1.35rem); }
+
+h1 {
+  background-color: #000206;    /* The background color of the box */
+  border: 1px solid #000305;       /* A border around the title */
+  padding: 40px 40px;           /* Space inside the box */
+  margin-bottom: 0;          /* Space below the H1 */
+  width: fit-content;           /* Makes the box only as wide as its content */
+  margin-left: auto;            /* Centers the box horizontally */
+  margin-right: auto;           /* Centers the box horizontally */
+  border-radius: 15px;           /* Optional: slightly rounded corners */
+  text-align: center;
+  opacity: 0.8;           
+}
+
+h3 {
+  background-color: #000206;    /* The background color of your box */
+  border: 1px solid #000305;       /* A border around the subtitle */
+  padding: 10px 20px;
+  margin-top: 40px;            /* Space inside the box */
+  margin-bottom: 20px;          /* Space below the H3 (before the nav box) */
+  width: fit-content;           /* Makes the box only as wide as its content */
+  margin-left: auto;            /* Centers the box horizontally */
+  margin-right: auto;           /* Centers the box horizontally */
+  border-radius: 15px;           /* Optional: slightly rounded corners */
+  text-align: center;
+  opacity: 0.8;           /* Centers the text within the H3 box */
+}
+
+p {
+  font-size: clamp(0.98rem, 2.4vw, 1.06rem);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.home-article h3 {
+  color: #ff1900;
+  text-align: center;
+  border-bottom: 6px solid #03590a;
+  padding-bottom: 10px;
+        }
+
+.text-box p {
+  line-height: 2.0;
+  text-align: justify;
+  /* The box properties: */
+  background-color: #070707;
+  opacity: 0.7;      
+  padding: 20px;               /* Space between the text and the box edge */
+  border: 6px solid #173213;   /* A solid border around the box */
+  border-radius: 15px;         /* Slightly rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* A subtle shadow for depth */
+  margin-top: 0;            /* Space between the title and the box */
+    }
+  
+.about-article{
+    color: #f5d60d;
+    text-align: center;
+    border-bottom: 6px solid #03590a;
+    padding-bottom: 10px;
+          }
+
+.text-content p {
+    line-height: 2.0;
+    text-align: center;
+    /* The box properties: */
+    background-color: #070707;
+    opacity: 0.8;      
+    padding: 20px;               /* Space between the text and the box edge */
+    border: 6px solid #173213;   /* A solid border around the box */
+    border-radius: 15px;         /* Slightly rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* A subtle shadow for depth */
+    margin-top: 0;            /* Space between the title and the box */
+      }
+
+
+
+.text-ulist ul {
+    line-height: 2.0;
+    text-align: justify;
+    /* The box properties: */
+    background-color: #070707;
+    opacity: 0.8;      
+    padding: 20px;               /* Space between the text and the box edge */
+    border: 6px solid #173213;   /* A solid border around the box */
+    border-radius: 15px;         /* Slightly rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* A subtle shadow for depth */
+    margin-top: 0;            /* Space between the title and the box */
+      }
+
+h4 {
+    color: #0bef07 !important;
+    text-align: left;
+    border-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    }
+/* ---  LAYOUT AND PICTURES --- */
+
+     .main-layout-wrapper {
+        display: flex;         /* Flexbox for main columns */
+        gap: 30px;             /* Space between left/right columns */
+        margin-top: 40px;
+        align-items: flex-start; /* Aligns both columns from the top */
+        flex-wrap: nowrap;       /* Prevent immediate wrapping, control via media query instead */
+    }
+
+    .left-image-container {
+        height: auto;      
+        max-width: 400px;
+        width: 100%;          /* Responsive width */
+        flex-shrink: 0; /* Prevents the image from shrinking too much on larger screens */
+        overflow: hidden;              /* prevents zoom spill */         
+    }
+
+    .right-content-stack {
+        display: flex;         
+        flex-direction: column; /* Stacks text and bottom image vertically */
+        gap: 20px;
+        align-items: center;
+        flex: 1;               /* Takes up all remaining flexible space */             
+    }
+    
+    /* Image Sizing: Let images scale proportionally within their containers */
+    .left-image-container img {
+        width: 100%;           /* Images always fill 100% of their parent container's width */
+        height: auto;
+        object-fit: cover;  /* Ensures the entire image is visible without cropping */
+        border: 6px solid #173213;  /* A solid border around the image */
+        border-radius: 15px;      /* Slightly rounded corners for aesthetics */
+        opacity: 0.8;     /* Fills the container space without distortion */
+        transition: transform 280ms ease, filter 280ms ease;
+        transform-origin: center center;
+        cursor: zoom-in;
+    }
+    .left-image-container img:hover {
+        transform: scale(1.2);
+        filter: brightness(1.4);
+    }
+
+.fs-card {
+  padding: 0;
+  margin: 0;
+  border: 6px solid #173213;
+  border-radius: 15px;
+  background: transparent;
+  overflow: hidden;
+  display: inline-block;
+  cursor: zoom-in;
+}
+
+
+.fs-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 280ms ease;
+}
+
+.fs-card:hover img {
+  transform: scale(1.06);
+}
+
+/* Fullscreen visuals */
+.fs-card:fullscreen {
+  border: none;
+  border-radius: 0;
+}
+.fs-card:fullscreen img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain; /* or 'cover' */
+  cursor: zoom-out;
+  background: rgba(0,0,0,.85);
+}
+
+nav {
+  background-color: #000206;    /* The background color of your box */
+  border: 1px solid #000305;       /* A light gray border around the box */
+  padding: 5px;                /* Space *inside* the box around the links */
+  margin-top: 0;
+  margin-bottom: 5px;             /* Space between the H3 and the nav box */
+  width: fit-content;           /* Makes the box only as wide as its content */
+  margin-left: auto;            /* Centers the box if you set width to fit-content */
+  margin-right: auto;           /* Centers the box if you set width to fit-content */
+  border-radius: 15px;
+  opacity: 0.7;                 /* Slightly transparent box */
+  display: flex;
+  gap: o.75rem;                   /* Space between the links */
+  flex-wrap: wrap;
+}
+
+nav a:link    { color: #f5c812; text-decoration: none; }
+nav a:visited { color: #33fa01; }
+nav a:hover   { color: #1708f0; text-decoration: underline; }
+nav a:active  { color: #ff0000; }
+
+
+.background-image {
+    position: fixed; /* Stays fixed when scrolling */
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* This works like background-size: cover */
+    z-index: -1; /* Puts the image behind all your text */
+    opacity: 0.8; /* Optional: Make it slightly transparent so text is easier to read */
+}
+
+
+    /* --- Media Query for Mobile Devices --- */
+/* When the screen width is 992px or less, stack the items vertically */
+
+@media (max-width: 992px) {
+  /* So background doesn’t jank on mobile/tablet */
+  body,
+  body.home,
+  body.about,
+  body.gallery,
+  body.contact {
+    background-attachment: scroll; /* override 'fixed' */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-layout-wrapper {
+    flex-direction: column; /* stack vertically */
+    align-items: stretch;   /* full width blocks */
+  }
+
+  .left-image-container,
+  .right-content-stack,
+  .text-box p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Reduce paddings for tighter mobile fit */
+  h1 { padding: 24px; }
+  h3 { margin-top: 24px; }
+}
+
+@media (max-width: 420px) {
+  /* Prevent any accidental horizontal scroll */
+  html, body { overflow-x: hidden; }
+  .container, main { width: min(100% - 1rem, 900px); }
+  nav { gap: 0.5rem; }
+}
+
+#error-fallback-message {
+    /* Hide the element by default so it never shows during normal operation */
+    display: none;
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid red;
+    background-color: black;
+}
+
+
+html, body { min-height: 100%; }
+body { display: flex; flex-direction: column; }
+main { flex: 1; display: flex; align-items: center; justify-content: center; }
